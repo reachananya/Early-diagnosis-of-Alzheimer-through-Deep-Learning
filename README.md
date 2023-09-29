@@ -9,9 +9,7 @@ This repository currently consists of only the pre-processed ADNI data along wit
 • The proposed model exhibits the capability to quantitative diffusion parameters and identify early-stage Alzheimer's disease.
 
 
-# Getting Started
-
-## DTI Data Preprocessing Workflow
+# Getting Started: DTI Data Preprocessing Workflow
 
 The following steps outline the data preprocessing workflow for DTI (Diffusion Tensor Imaging):
 
