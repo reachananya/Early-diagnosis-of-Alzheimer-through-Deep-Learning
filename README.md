@@ -72,4 +72,10 @@ The resulting training datasets are named as follows:
 2. Coronal brain slice representing the Uncinate fasciculus region, highlighted with p-value of two sample t-test(df=22). Green color: hypothesis testing tstat1 - Healthy CN > MCI, Red color: hypothesis testing tstat2 - Healthy CN < MCI.
 <img width="878" alt="TBSS_pt2" src="https://github.com/reachananya/Early-diagnosis-of-Alzheimer-through-Deep-Learning/assets/48484581/b98d1d81-cea7-481f-9244-b08cc850cb98">
 
-
+# Collaborators
+| Name                      |   Email ID
+| --------------------------| ------------------ |
+| [Abhishek Tiwari](https://www.linkedin.com/in/abhishek-tiwari-4333208a/)  | at326@snu.edu.in |
+| [Ananya Singhal](https://www.linkedin.com/in/ananya-singhal-0608/)        | as146@snu.edu.in |
+| [Dr. Saurabh J. Shigwan](https://www.linkedin.com/in/saurabhshigwan/)     | saurabh.shigwan@snu.edu.in |
+| [Dr. Rajeev Kumar Singh](https://www.linkedin.com/in/rajeevkumarsingh/)   | Rajeev.kumar@snu.edu.in |
