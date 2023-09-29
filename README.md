@@ -4,9 +4,9 @@ This repository currently consists of only the pre-processed ADNI data along wit
 
 
 ## The main contributions of this research are:
-• The proposed model efficiently learns spatial correlation in neighboring voxels, thereby improving the robustness of diffusion tensor imaging parameters.
-• The proposed method speeds up the estimation of DTI parameters using sparse measurements.
-• The proposed model exhibits the capability to quantitative diffusion parameters and identify early-stage Alzheimer's disease.
+- The proposed model efficiently learns spatial correlation in neighboring voxels, thereby improving the robustness of diffusion tensor imaging parameters.
+- The proposed method speeds up the estimation of DTI parameters using sparse measurements.
+- The proposed model exhibits the capability to quantitative diffusion parameters and identify early-stage Alzheimer's disease.
 
 
 # Getting Started: DTI Data Preprocessing Workflow
