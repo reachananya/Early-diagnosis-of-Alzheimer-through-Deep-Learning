@@ -44,11 +44,24 @@ Zero-pad the input data for each tuple to create a 128 × 100 matrix.
 
 ### Step 10: Dataset Naming
 The resulting training datasets are named as follows:
-- "ADNI − 41" for the dataset with 41 diffusion directions.
-- "ADNI − 21" for the dataset with 21 diffusion directions.
-- "ADNI − 5" for the dataset with 5 diffusion directions.
+- "41diff_proposedModel" generated 41 diffusion directions using the SwinTransformer model.
+- "41diff_transformerDTI" generated 41 diffusion directions using the Davood Transformer model.
+- "21diff_proposedModel" generated 21 diffusion directions using the SwinTransformer model.
+- "21diff_transformerDTI" generated 21 diffusion directions using the Davood Transformer model.
+- "5diff_proposedModel" generated 5 diffusion directions using the SwinTransformer model.
+- "5diff_transformerDTI" generated 5 diffusion directions using the Davood Transformer model.
 
-These datasets correspond to the respective diffusion direction configurations.
+# Visualizartion of the Ground Truth, Proposed Method, LLS Fitting (Traditional) and Transformer DTI
+
+1. The paper compares the diffusion direction of 41 using ground truth, proposed method, and LLS fitting [Koay et al. (2006)](https://pubmed.ncbi.nlm.nih.gov/16828568/)
+<img width="360" alt="41diff_comparison" src="https://github.com/reachananya/Early-diagnosis-of-Alzheimer-through-Deep-Learning/assets/48484581/09d5ae4a-3825-4846-9a09-098d541b98ae">
+
+2. The paper compares the diffusion direction of 21 using ground truth, pro-posed method, LLS fitting [Koay et al. (2006)](https://pubmed.ncbi.nlm.nih.gov/16828568/), and Transformer-DTI [Karimi and Gholipour (2022)](https://pubmed.ncbi.nlm.nih.gov/35809969/)
+<img width="467" alt="21diff_comparison" src="https://github.com/reachananya/Early-diagnosis-of-Alzheimer-through-Deep-Learning/assets/48484581/81db6a23-70c2-4640-97ac-bdb96e9c06fc">
+
+3. The paper compares the diffusion direction of 5 using ground truth, proposed method, LLS fitting [Koay et al. (2006)](https://pubmed.ncbi.nlm.nih.gov/16828568/), and Transformer-DTI [Karimi and Gholipour (2022)](https://pubmed.ncbi.nlm.nih.gov/35809969/)
+<img width="465" alt="5diff_comparison" src="https://github.com/reachananya/Early-diagnosis-of-Alzheimer-through-Deep-Learning/assets/48484581/ba602152-c81a-4054-a578-182a82cbea8a">
+
 
 
 
