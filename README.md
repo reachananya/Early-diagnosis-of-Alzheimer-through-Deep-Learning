@@ -51,7 +51,7 @@ The resulting training datasets are named as follows:
 - "5diff_proposedModel" generated 5 diffusion directions using the SwinTransformer model.
 - "5diff_transformerDTI" generated 5 diffusion directions using the Davood Transformer model.
 
-# Visualizartion of the Ground Truth, Proposed Method, LLS Fitting (Traditional) and Transformer DTI
+# Visualisation of the Ground Truth, Proposed Method, LLS Fitting (Traditional) and Transformer DTI
 
 1. The paper compares the diffusion direction of 41 using ground truth, proposed method, and LLS fitting [Koay et al. (2006)](https://pubmed.ncbi.nlm.nih.gov/16828568/)
 <img width="360" alt="41diff_comparison" src="https://github.com/reachananya/Early-diagnosis-of-Alzheimer-through-Deep-Learning/assets/48484581/09d5ae4a-3825-4846-9a09-098d541b98ae">
@@ -63,5 +63,13 @@ The resulting training datasets are named as follows:
 <img width="465" alt="5diff_comparison" src="https://github.com/reachananya/Early-diagnosis-of-Alzheimer-through-Deep-Learning/assets/48484581/ba602152-c81a-4054-a578-182a82cbea8a">
 
 
+# TBSS Analysis
+
+1. Axial brain slice representing the Cingulum region, highlighted with p-value of two sample t-test(df=22). Green color: hypothesis testing tstat1 - Healthy CN > MCI, Red color: hypothesis testing tstat2 - Healthy CN < MCI.
+<img width="879" alt="TBSS_PT1" src="https://github.com/reachananya/Early-diagnosis-of-Alzheimer-through-Deep-Learning/assets/48484581/fd204b13-02c5-46d8-b560-8428f8c3644e">
+
+
+2. Coronal brain slice representing the Uncinate fasciculus region, highlighted with p-value of two sample t-test(df=22). Green color: hypothesis testing tstat1 - Healthy CN > MCI, Red color: hypothesis testing tstat2 - Healthy CN < MCI.
+<img width="878" alt="TBSS_pt2" src="https://github.com/reachananya/Early-diagnosis-of-Alzheimer-through-Deep-Learning/assets/48484581/b98d1d81-cea7-481f-9244-b08cc850cb98">
 
 
