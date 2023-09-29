@@ -9,42 +9,42 @@ This repository currently consists of only the pre-processed ADNI data along wit
 • The proposed model exhibits the capability to quantitative diffusion parameters and identify early-stage Alzheimer's disease.
 
 
-## Getting Started
+# Getting Started
 
-# DTI Data Preprocessing Workflow
+## DTI Data Preprocessing Workflow
 
 The following steps outline the data preprocessing workflow for DTI (Diffusion Tensor Imaging):
 
-## Step 1: DTI Model Fit
+### Step 1: DTI Model Fit
 Apply the DTI model fit from the DIPY Python package (Garyfallidis et al., 2014) to process each DWI (Diffusion-Weighted Imaging) image individually. This results in the computation of six diffusion components: Dxx, Dxy, Dyy, Dxz, Dyz, and Dzz of the diffusion tensor.
 
-## Step 2: Voxel Selection
+### Step 2: Voxel Selection
 Select 100,000 voxels from each DWI image based on their fractional anisotropy (FA) score. Voxels with an FA score of zero are excluded, and the selection is uniformly distributed within the range (0, 1).
 
-## Step 3: Dataset Generation
+### Step 3: Dataset Generation
 Generate 100,000 tuples of (input, ground-truth), where each tuple comprises:
 - An input 5 × 5 × 5 voxel patch with 41 diffusion directions per voxel.
 - A ground-truth 5 × 5 × 5 voxel patch with a 6 × 1 vector per voxel, representing the corresponding six diffusion components of the diffusion tensor.
 
-## Step 4: Signal Concatenation
+### Step 4: Signal Concatenation
 Concatenate the diffusion signals of the neighboring 5 × 5 × 5 patches to construct a 125 × 41 matrix for each input voxel.
 
-## Step 5: Direction and Signal Concatenation
+### Step 5: Direction and Signal Concatenation
 Combine the diffusion directions (3 × 41) with the diffusion signals to create a 128 × 41 matrix for each input voxel.
 
-## Step 6: Zero-padding
+### Step 6: Zero-padding
 Zero-pad the input data for each tuple to form a 128 × 100 matrix. The corresponding ground truth is represented as a 125 × 6 matrix. This processed dataset is denoted as "ADNI − 41."
 
-## Step 7: Qball-based Interpolation
+### Step 7: Qball-based Interpolation
 Perform Qball-based interpolation (Tuch, 2004; Garyfallidis et al., 2014) on the 41-directional input data from the "ADNI − 41" dataset. This step yields 41-directional, 21-directional, and 5-directional diffusion signals, utilizing the DIPY package.
 
-## Step 8: Direction and Signal Concatenation (Interpolated Data)
+### Step 8: Direction and Signal Concatenation (Interpolated Data)
 Combine the diffusion directions with the interpolated diffusion signals for each tuple. This results in input vectors of sizes 125 × 41, 125 × 21, and 125 × 5, along with a ground truth matrix of size 125 × 6.
 
-## Step 9: Zero-padding (Interpolated Data)
+### Step 9: Zero-padding (Interpolated Data)
 Zero-pad the input data for each tuple to create a 128 × 100 matrix.
 
-## Step 10: Dataset Naming
+### Step 10: Dataset Naming
 The resulting training datasets are named as follows:
 - "ADNI − 41" for the dataset with 41 diffusion directions.
 - "ADNI − 21" for the dataset with 21 diffusion directions.
